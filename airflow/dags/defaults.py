@@ -19,7 +19,7 @@ from typing import Sequence, Any, Dict
 environment_conf = 'stg'
 default_packages = 'com.typesafe:config:1.4.0,io.delta:delta-core_2.12:2.4.0'
 remote_one_package = '/home/vagrant/repos/spark-apps/spark-datapipelines-one_2.12-1.0.jar'
-remote_salesforce_package = '/home/vagrant/libs/spark-salesforce-1.1.5.jar'
+remote_salesforce_package = '/home/vagrant/repos/spark-apps/spark-salesforce-1.1.5.jar'
 config_file_path = '/home/vagrant/repos/spark-apps/application.json'
 
 
