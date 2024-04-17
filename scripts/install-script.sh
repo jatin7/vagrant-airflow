@@ -93,6 +93,13 @@ airflow users create \
 --role Admin \
 --email objecthuang@hotmail.com
 
+airflow connections add 'livy_default' \
+    --conn-json '{
+        "conn_type": "livy",
+        "host": "192.168.2.10",
+        "port": 8998
+    }'
+
 echo "====== airflow service ====="
 # # setting up Airflow 
 sudo su
