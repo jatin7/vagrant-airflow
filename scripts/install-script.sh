@@ -54,9 +54,9 @@ declare -a arr=(
 "AIRFLOW_HOME=/opt/airflow" 
 "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION='true'" 
 "AIRFLOW__CORE__LOAD_EXAMPLES='false'" 
-"AIRFLOW__CORE__DEFAULT_UI_TIMEZONE='America/Sao_Paulo'" 
-"AIRFLOW__CORE__DEFAULT_TIMEZONE='America/Sao_Paulo'" 
-"AIRFLOW__WEBSERVER__DEFAULT_UI_TIMEZONE='America/Sao_Paulo'" 
+"AIRFLOW__CORE__DEFAULT_UI_TIMEZONE='America/Chicago'" 
+"AIRFLOW__CORE__DEFAULT_TIMEZONE='America/Chicago'" 
+"AIRFLOW__WEBSERVER__DEFAULT_UI_TIMEZONE='America/Chicago'" 
 "AIRFLOW__WEBSERVER__INSTANCE_NAME='SHELL_AIRFLOW'" 
 "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@localhost:5432/airflow" 
 "AIRFLOW__CORE__EXECUTOR=LocalExecutor" 
@@ -96,7 +96,7 @@ airflow users create \
 airflow connections add 'livy_default' \
     --conn-json '{
         "conn_type": "livy",
-        "host": "192.168.2.10",
+        "host": "192.168.3.10",
         "port": 8998
     }'
 
