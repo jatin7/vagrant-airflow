@@ -87,11 +87,11 @@ airflow db migrate
 
 airflow users create \
 --username admin \
---firstname Jacob \
+--firstname Jatin \
 --password admin \
---lastname Huang \
+--lastname Shah \
 --role Admin \
---email objecthuang@hotmail.com
+--email jatin7@gmail.com
 
 airflow connections add 'livy_default' \
     --conn-json '{
